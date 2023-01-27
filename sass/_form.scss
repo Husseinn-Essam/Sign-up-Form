@@ -1,0 +1,105 @@
+@mixin bold {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.1;
+    color: black;
+}
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 5px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-items: center;
+}
+.form-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-row {
+    @include bold;
+    display: flex;
+    flex-direction: column;
+    margin: 0.75rem;
+    width: 40%;
+    padding: 7px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: whitesmoke;
+    overflow: scroll;
+}
+.submit-btn {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 1.25rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    width: 40%;
+    border: none;
+    cursor: pointer;
+}
+
+.txt-input {
+    border-radius: 5px;
+    border: 0.5px solid;
+    font-size: 1rem;
+}
+.sub-plan {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5px;
+    gap: 1.5rem;
+    @include bold;
+    align-items: center;
+    .sub-fee {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 5px;
+        label {
+            padding-bottom: 1px;
+        }
+    }
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    display: grid;
+    place-content: center;
+    appearance: none;
+    font: inherit;
+    color: black;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid black;
+    border-radius: 50%;
+    margin-top: 10px;
+    &::before {
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em var(--form-control-color);
+    }
+    &:checked::before {
+        transform: scale(1);
+    }
+    &::before {
+        background-color: black;
+    }
+}
+.log-in,
+a {
+    color: blue;
+}

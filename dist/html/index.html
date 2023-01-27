@@ -5,10 +5,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Sign up</title>
 </head>
 
 <body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                JOIN NOW
+            </div>
+            <div class="author">
+                Photo by <a
+                    href="https://unsplash.com/@echaparro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Edgar
+                    Chaparro</a> on <a
+                    href="https://unsplash.com/photos/sHfo3WOgGTU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="dumb-text">
+                <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Necessitatibus, commodi!</p>
+
+                <p>Sign up now to get started.</p>
+                <br>
+                <p>You know you want to.</p>
+            </div>
+            <form action="" method="post" class="form-wrap">
+                <div class="form">
+                    <div class="form-row">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" class="txt-input" required>
+                    </div>
+
+                    <div class="form-row left">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" class="txt-input" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="txt-input" placeholder="eg:bob@gmail.com"
+                            required>
+                    </div>
+
+                    <div class="form-row left">
+                        <label for="phone">Phone number</label>
+                        <input type="number" name="phone" id="phone" class="txt-input" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" id="pass" class="txt-input" required>
+                    </div>
+
+                    <div class="form-row left">
+                        <label for="conf-pass">Confirm Password</label>
+                        <input type="password" name="conf-pass" id="conf-pass" class="txt-input" required>
+                    </div>
+                    <div class="sub-plan">
+                        <label>Subscribtions:</label>
+                        <div class="sub-fee">
+                            <input type="radio" id="one" name="sub" value="one">
+                            <label for="One">One Month</label>
+                        </div>
+                        <div class="sub-fee">
+                            <input type="radio" id="three" name="sub" value="three">
+                            <label for="Three">Three Month</label>
+                        </div>
+                        <div class="sub-fee">
+                            <input type="radio" id="year" name="sub" value="year">
+                            <label for="year">One Year</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Create an account</button>
+                <div class="login">Already have an account <a href="index.html">Log-in now</a></div>
+            </form>
+
+        </div>
+
+    </div>
+
 
 </body>
 

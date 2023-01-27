@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    background-image: url("edgar-chaparro-sHfo3WOgGTU-unsplash.jpg");
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    min-width: 35%;
+    position: relative;
+}
+
+.author {
+    position: absolute;
+    color: white;
+    bottom: 5%;
+    > a {
+        color: white;
+    }
+}
+.logo {
+    height: 25%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3));
+    text-align: center;
+    align-self: center;
+    color: white;
+    font-size: 3em;
+    padding: 26px;
+}
