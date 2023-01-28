@@ -20,3 +20,9 @@ body {
     padding: 1rem;
     margin-bottom: 34px;
 }
+@media (max-width: 587px) {
+    .wrapper,
+    .form {
+        flex-direction: column;
+    }
+}

@@ -114,6 +114,7 @@ a {
   display: flex;
   background-image: url("edgar-chaparro-sHfo3WOgGTU-unsplash.jpg");
   background-size: cover;
+  background-position: center;
   align-items: center;
   justify-content: center;
   min-width: 35%;
@@ -161,4 +162,11 @@ body {
   font-weight: 700;
   padding: 1rem;
   margin-bottom: 34px;
+}
+
+@media (max-width: 587px) {
+  .wrapper,
+.form {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */
